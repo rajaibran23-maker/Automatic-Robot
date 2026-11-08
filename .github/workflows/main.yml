@@ -41,10 +41,10 @@ jobs:
           gradle-version: '9.3.1'
 
       - name: Check ZIP file
-        run: test -f GridBot_Android_Phone_Build.zip
+        run: test -f GridBot_Android_APK_Build_Ready.zip
 
       - name: Unpack project ZIP
-        run: unzip -q GridBot_Android_Phone_Build.zip -d source
+        run: unzip -q GridBot_Android_APK_Build_Ready.zip -d source
 
       - name: Check Android project
         run: test -f source/gridbot_project/app/build.gradle.kts
